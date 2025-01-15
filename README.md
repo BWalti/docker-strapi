@@ -1,4 +1,4 @@
-# strapi (v4+) containerized
+# strapi (v5+) containerized
 
 ![Strapi](https://github.com/bwalti/docker-strapi/blob/main/assets/PNG.logo.purple.dark.png?raw=true)
 

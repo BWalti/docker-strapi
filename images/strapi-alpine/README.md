@@ -1,3 +1,3 @@
-# Strapi v4
+# Strapi v5
 
 Based on alpine.

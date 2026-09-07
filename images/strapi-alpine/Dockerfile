@@ -1,8 +1,8 @@
 # BASE
-ARG NODE_VERSION=20
+ARG NODE_VERSION=26
 ARG STRAPI_VERSION=latest
 
-FROM node:${NODE_VERSION}-alpine3.22 AS base-alpine
+FROM node:${NODE_VERSION}-alpine3.23 AS base-alpine
 
 # From https://docs.strapi.io/dev-docs/installation/docker#development-andor-staging-environments
 RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev nasm bash vips-dev git

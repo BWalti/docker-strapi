@@ -56,14 +56,3 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: bibolorean/strapi
           readme-filepath: README.md
-
-      - name: Create Release in GitHub
-        id: create_release
-        uses: actions/create-release@v1
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-        with:
-          tag_name: v${{steps.vars.outputs.tag}}
-          release_name: Release ${{steps.vars.outputs.tag}}
-          body: strapi v${{steps.vars.outputs.tag}}

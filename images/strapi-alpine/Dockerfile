@@ -8,7 +8,7 @@ FROM node:${NODE_VERSION}-alpine3.23 AS base-alpine
 RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev nasm bash vips-dev git
 RUN npm i -g node-gyp
 RUN npm i -g create-strapi
-RUN npm i -g yarn
+# RUN npm i -g yarn
 
 RUN mkdir -p /app && chown 1000:1000 -R /app
 WORKDIR /app
